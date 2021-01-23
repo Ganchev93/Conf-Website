@@ -1,0 +1,95 @@
+@import "var.less";
+
+.section-speakers{
+    text-align: left;
+    margin-bottom: 15px;
+
+    &-item{
+        padding-bottom: 50px;
+        @media only screen and (min-width: @mobile){
+            padding-top: 50px;
+        }
+        &-wrapper{
+            @media only screen and (min-width: @mobile){
+                display: flex;
+                flex-direction: row-reverse;
+                width: 760px;
+                margin: 0 auto;   
+            }
+            @media only screen and (min-width: @desktop){
+                width: 860px;
+            }
+            &-img{
+                padding: 22px;
+                
+                border: 1px solid #dfe2e5;
+                border-radius: 5px;
+                text-align: center;
+                width: 280px;
+                height: 170px;
+                margin: 120px auto 0 auto;
+               
+                
+                img{
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                    display: block;
+                    margin-top: -70px;
+                    margin-left: 50px;
+                    margin-bottom: 20px;
+                    
+                }
+
+                a{
+                    
+                    color: @color-green;
+                    font-size: 18px;
+                }
+
+                a:hover{
+                    color:@color-silver;
+                }
+            }
+
+            &-info{
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                @media only screen and (min-width: @mobile){
+                    text-align: left;
+                }
+
+                h2{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color:@color-green;
+                }
+
+                h5{
+                    color:@color-silver;
+                    font-weight: 400;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    color:@color-grey;
+                    font-size: 16px;
+
+                }
+
+                a{
+                    color:@color-green;
+                    text-decoration: underline;
+                    text-decoration-style: dotted;
+                    
+
+                }
+            }
+        }
+    }
+
+    
+}

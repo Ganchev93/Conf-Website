@@ -1,0 +1,86 @@
+@import "var.less";
+
+.section-venue{
+    margin-bottom: 50px;
+    @media only screen and (min-width: @mobile){
+        margin-top: 80px;
+    }
+    &-wrapper{
+        width: 70%;
+        margin: 0 auto;
+        @media only screen and (min-width: @mobile){
+            width: 760px;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: @desktop){
+            width: 860px;
+        }   
+    }
+
+    &-item{
+        @media only screen and (min-width: @mobile){
+            display: flex;
+            width: 860px;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        &-desc{
+
+            text-align: center;
+            h2{
+                color: @color-green;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 25px;
+                font-weight: 450;
+                @media only screen and (min-width: @mobile){
+                    margin:0 0 10px 0;
+                }
+            }
+
+            p{
+                @media only screen and (min-width: @mobile){
+                    margin-top: 0;
+                }
+                &:nth-of-type(1){
+                    color: @color-grey;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 22px;
+                }
+
+                &:nth-of-type(2){
+                    a{
+                        color: @color-green;
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        font-weight: 400;
+                        border-bottom: solid 1px #dfe2e5;
+                        &:hover{
+                            color: @color-silver;
+                        }
+                    }
+
+                    span{
+                        color: @color-grey;
+                    }
+                }
+            }
+        }
+
+        &-img{
+            img{
+              max-width: 100%;
+              height: auto;
+              @media only screen and (min-width: @mobile){
+                  max-width: 81%;
+                  height: auto;
+              }
+              @media only screen and (min-width: @desktop){
+                  max-width: 100%;
+                  height: auto;
+              }
+            } 
+        }
+    }
+}
